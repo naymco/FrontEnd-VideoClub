@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  background: #200122;
+  background: -webkit-linear-gradient(to right, #6f0000, #200122);
+  background: linear-gradient(to right, #6f0000, #200122);
+  font-family: "Rubik", sans-serif;
+}

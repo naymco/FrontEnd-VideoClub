@@ -1,0 +1,36 @@
+.movies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: black;
+  padding: 0 120px;
+  .movie {
+    background: #e4e4e4;
+    display: flex;
+    flex-direction: row;
+    //align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem;
+    padding: 0;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+
+    .image {
+      border: 1px solid #e2e2e2;
+      width: max-content;
+      height: min-content;
+      border-radius: 6px 0 0 6px;
+    }
+    .description {
+      margin: 5px;
+      padding: 10px;
+
+      .parrafo {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4; /* Number of lines displayed before it truncate */
+        overflow: hidden;
+      }
+    }
+  }
+}
