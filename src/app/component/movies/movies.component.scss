@@ -18,18 +18,38 @@
     .image {
       border: 1px solid #e2e2e2;
       width: max-content;
-      height: min-content;
+      height: max-content;
       border-radius: 6px 0 0 6px;
     }
     .description {
-      margin: 5px;
+      margin: 0px;
       padding: 10px;
-
+      .title {
+        font-size: 20px;
+        padding-bottom: 5px;
+      }
       .parrafo {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 4; /* Number of lines displayed before it truncate */
         overflow: hidden;
+      }
+
+      a.infoBtn {
+        border-top: 1px solid #757575;
+        text-decoration: none;
+        padding-top: 8px;
+        margin-top: 40%;
+        text-align: center;
+        display: block;
+        color: #1b1b1b;
+        transition: 0.5s;
+      }
+      a.infoBtn:hover {
+        color: #ffffff;
+        background: #5c1010;
+        padding: 5px;
+        border-radius: 0 0 5px 5px;
       }
     }
   }

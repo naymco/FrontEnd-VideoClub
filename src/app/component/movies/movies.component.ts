@@ -7,7 +7,7 @@ import { MovieService } from '../../services/movie.service';
   styleUrls: ['./movies.component.scss']
 })
 export class MoviesComponent implements OnInit {
-  peliculas: Array<MoviesComponent> = [];
+  public peliculas: Array<MoviesComponent> = [];
   constructor(private movieService: MovieService) { }
 
   ngOnInit() {

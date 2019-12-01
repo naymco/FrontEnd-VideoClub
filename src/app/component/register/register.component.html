@@ -1,0 +1,37 @@
+<div class="form-group" (submit)="registrar(form)">
+  <form class="formRegister">
+    <h2>Register</h2>
+    <input
+      type="text"
+      [(ngModel)]="user.name"
+      #name
+      name="name"
+      placeholder="Name"
+    />
+
+    <input
+      type="text"
+      [(ngModel)]="user.username"
+      #username
+      name="username"
+      placeholder="Username"
+    />
+
+    <input
+      type="text"
+      [(ngModel)]="user.email"
+      #email
+      name="email"
+      placeholder="Email"
+    />
+
+    <input
+      type="password"
+      [(ngModel)]="user.password"
+      #password
+      name="password"
+      placeholder="Password"
+    />
+    <button class="btnSend">Send</button>
+  </form>
+</div>

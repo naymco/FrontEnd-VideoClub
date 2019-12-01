@@ -1,0 +1,19 @@
+<div>
+  <div class="movie-description">
+    <img
+      class="image"
+      src="https://image.tmdb.org/t/p/w200/{{ movie.ids.poster_path }}"
+      alt="poster"
+    />
+    <div class="description">
+      <h2 class="title">{{ movie.ids.title }}</h2>
+      <div class="parrafo">
+        <p>Description: {{ movie.ids.overview }}</p>
+        <p class="list">Popularity: {{ movie.ids.popularity }}</p>
+        <p class="list">Release Date: {{ movie.ids.release_date }}</p>
+        <p class="list">Vote Average: {{ movie.ids.vote_average }}</p>
+        <button>Rent me!</button>
+      </div>
+    </div>
+  </div>
+</div>

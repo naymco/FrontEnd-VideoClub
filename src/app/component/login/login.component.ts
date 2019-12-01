@@ -18,11 +18,11 @@ export class LoginComponent {
   login() {
     this.userService.login(this.user).subscribe(res => {
       this.res = res;
-      this.userService.setUser(res['users'])
-      localStorage.setItem('token', res['token'])
+      this.userService.setUser(res['user'])
+      //localStorage.setItem('token', res['token'])
       setTimeout(() => {
-        this.router.navigate(['/movie'])
-      }, 2500);
+        this.router.navigate(['/auth'])
+      }, 1000);
     },
       error => {
         this.userService.isRed = true;

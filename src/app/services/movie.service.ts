@@ -13,8 +13,12 @@ export class MovieService {
   getDiscoverMovies(): Observable<object> {
     return this.httpClient.get(this.apiUrl + '/movie')
   }
+  getMovieById(id: any) {
+    return this.httpClient.get(`${this.apiUrl}/movie/${id}`)
+  }
 
-  // getPanelLogin(): Observable<object> {
-  //   return this.httpClient.get(this.apiUrl + '/auth/login')
-  // }
+  getTitleByTitle(id: object): Observable<object> {
+    return this.httpClient.get(`${this.apiUrl}/movie/title/${id}`)
+  }
+
 }
