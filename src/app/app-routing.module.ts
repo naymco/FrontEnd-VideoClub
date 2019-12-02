@@ -5,6 +5,7 @@ import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { MovieDetailComponent } from './component/movie-detail/movie-detail.component';
 import { ProfileComponent } from './component/profile/profile.component';
+import { TitleSearchComponent } from './component/title-search/title-search.component';
 
 
 
@@ -15,7 +16,7 @@ const routes: Routes = [
   { path: "auth/login", component: LoginComponent },
   { path: "user/register", component: RegisterComponent },
   { path: "movie/:id", component: MovieDetailComponent },
-  // { path: "movie/title/:title", component: SearchTitleComponent }
+  { path: "movie/title/:title", component: TitleSearchComponent }
 ];
 
 @NgModule({

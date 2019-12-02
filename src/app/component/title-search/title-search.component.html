@@ -1,0 +1,12 @@
+<div class="movies">
+    <div class="movie" *ngFor="let title of movieTitles">
+        <img class="image" src="https://image.tmdb.org/t/p/w200/{{ title.poster_path }}" alt="poster" />
+        <div class="description">
+            <h2 class="title">{{ title.title }}</h2>
+            <p class="parrafo">
+                {{ title.overview }}
+            </p>
+            <a class="infoBtn" routerLink="/movie/{{ title._id }}">Read more...</a>
+        </div>
+    </div>
+</div>
