@@ -17,10 +17,10 @@ export class MovieService {
     return this.httpClient.get(`${this.apiUrl}/movie/${id}`)
   }
 
-  // getTitleByTitle(id: object): Observable<object> {
-  //   return this.httpClient.get(`${this.apiUrl}/movie/title/${id}`)
-  // }
   titleS(title: string): Observable<object> {
     return this.httpClient.get(`${this.apiUrl}/movie/title/${title}`);
+  }
+  getGenre(genre: string): Observable<object> {
+    return this.httpClient.get(`${this.apiUrl}/genre/${genre}`)
   }
 }

@@ -1,0 +1,16 @@
+<div class="movies">
+  <div class="movie" *ngFor="let genres of genre">
+    <img
+      class="image"
+      src="https://image.tmdb.org/t/p/w200/{{ genres.poster_path }}"
+      alt="poster"
+    />
+    <div class="description">
+      <h2 class="title">{{ genres.title }}</h2>
+      <p class="parrafo">
+        {{ genres.overview }}
+      </p>
+      <a class="infoBtn" routerLink="/movie/{{ genres._id }}">Read more...</a>
+    </div>
+  </div>
+</div>

@@ -25,8 +25,7 @@
       margin: 0px;
       padding: 10px;
       .title {
-        font-size: 18px;
-        border-bottom: 1px solid #757575;
+        font-size: 20px;
         padding-bottom: 5px;
       }
       .parrafo {
@@ -34,7 +33,6 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 4; /* Number of lines displayed before it truncate */
         overflow: hidden;
-        padding-top: 5px;
       }
 
       a.infoBtn {
@@ -49,7 +47,7 @@
       }
       a.infoBtn:hover {
         color: #ffffff;
-        background: rgb(33, 141, 33);
+        background: #5c1010;
         padding: 5px;
         border-radius: 0 0 5px 5px;
       }

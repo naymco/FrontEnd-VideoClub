@@ -12,6 +12,8 @@ import { RegisterComponent } from './component/register/register.component';
 import { MovieDetailComponent } from './component/movie-detail/movie-detail.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import { TitleSearchComponent } from './component/title-search/title-search.component';
+import { GenreComponent } from './component/genre/genre.component';
+
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { TitleSearchComponent } from './component/title-search/title-search.comp
     MovieDetailComponent,
     ProfileComponent,
     TitleSearchComponent,
+    GenreComponent,
 
   ],
   imports: [
