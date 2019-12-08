@@ -12,7 +12,9 @@
         <p class="list">Popularity: {{ movie.ids.popularity }}</p>
         <p class="list">Release Date: {{ movie.ids.release_date }}</p>
         <p class="list">Vote Average: {{ movie.ids.vote_average }}</p>
-        <button>Rent me!</button>
+        <button type="submit" class="btnRent" (ngSubmit)="goOrder()">
+          Rent me!
+        </button>
       </div>
     </div>
   </div>

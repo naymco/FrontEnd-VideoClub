@@ -13,13 +13,14 @@ export class LoginComponent {
     username: '',
     password: '',
   }
+  usuario = JSON.parse(localStorage.getItem('token'))
   res: object;
   constructor(private userService: UserService, private router: Router) { }
   login() {
     this.userService.login(this.user).subscribe(res => {
       this.res = res;
       this.userService.setUser(res['user'])
-      //localStorage.setItem('token', res['token'])
+      localStorage.setItem('token', JSON.stringify(res))
       setTimeout(() => {
         this.router.navigate(['/auth'])
       }, 1000);

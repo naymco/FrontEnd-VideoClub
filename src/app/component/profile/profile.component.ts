@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../../services/user.service';
-import { Profile } from '../Models/profile.model'
+import { Profile } from '../Models/profile.model';
 
 @Component({
   selector: 'app-profile',
@@ -9,25 +9,21 @@ import { Profile } from '../Models/profile.model'
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent {
-  public profile: Profile = {
-    username: '',
-    password: '',
-    alquiler_peli: '',
-    peliculaPedida: '',
-    fecha_pedido: '',
-    fecha_entrega: ''
-  }
+  public profile: Profile;
+  public userAuth: string;
+
+  usuario = JSON.parse(localStorage.getItem('token'))
 
   constructor(
-    private userService: UserService,
-    private route: ActivatedRoute
+    private _userService: UserService,
+    private _route: ActivatedRoute
   ) { }
 
+  ngOnInit() {
+    
+  }
   userProfile() {
-    //this.userService.auth(this.profile)
-    this.route.paramMap.subscribe(profile => {
-      this.userService
-    })
+
   }
 
 }

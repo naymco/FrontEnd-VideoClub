@@ -13,6 +13,8 @@ import { MovieDetailComponent } from './component/movie-detail/movie-detail.comp
 import { ProfileComponent } from './component/profile/profile.component';
 import { TitleSearchComponent } from './component/title-search/title-search.component';
 import { GenreComponent } from './component/genre/genre.component';
+import { OrderComponent } from './component/order/order.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 
 
@@ -27,6 +29,8 @@ import { GenreComponent } from './component/genre/genre.component';
     ProfileComponent,
     TitleSearchComponent,
     GenreComponent,
+    OrderComponent,
+    FilterPipe,
 
   ],
   imports: [

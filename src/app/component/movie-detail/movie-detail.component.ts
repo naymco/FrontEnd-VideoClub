@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MovieService } from '../../services/movie.service';
 
 @Component({
@@ -9,10 +9,12 @@ import { MovieService } from '../../services/movie.service';
 })
 export class MovieDetailComponent implements OnInit {
   public movie: object;
+  rentMe: string;
 
   constructor(
     private movieService: MovieService,
     private route: ActivatedRoute,
+    private _router: Router
   ) { }
 
   ngOnInit() {
@@ -26,5 +28,7 @@ export class MovieDetailComponent implements OnInit {
         })
     })
   }
-
+  goOrder() {
+    this._router.navigate(['/order', this.rentMe]);
+  }
 }

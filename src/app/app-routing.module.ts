@@ -1,14 +1,13 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { MoviesComponent } from './component/movies/movies.component';
-import { LoginComponent } from './component/login/login.component';
-import { RegisterComponent } from './component/register/register.component';
-import { MovieDetailComponent } from './component/movie-detail/movie-detail.component';
-import { ProfileComponent } from './component/profile/profile.component';
-import { TitleSearchComponent } from './component/title-search/title-search.component';
-import { GenreComponent } from './component/genre/genre.component';
-
-
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { MoviesComponent } from "./component/movies/movies.component";
+import { LoginComponent } from "./component/login/login.component";
+import { RegisterComponent } from "./component/register/register.component";
+import { MovieDetailComponent } from "./component/movie-detail/movie-detail.component";
+import { ProfileComponent } from "./component/profile/profile.component";
+import { TitleSearchComponent } from "./component/title-search/title-search.component";
+import { GenreComponent } from "./component/genre/genre.component";
+import { OrderComponent } from "./component/order/order.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "movie", pathMatch: "full" },
@@ -18,11 +17,12 @@ const routes: Routes = [
   { path: "user/register", component: RegisterComponent },
   { path: "movie/:id", component: MovieDetailComponent },
   { path: "movie/title/:title", component: TitleSearchComponent },
-  { path: "genre/:genre", component: GenreComponent }
+  { path: "movie/title/:genre", component: GenreComponent },
+  { path: "order/:id", component: OrderComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

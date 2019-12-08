@@ -1,1 +1,17 @@
-<p>profile works!</p>
+<div class="perfil">
+  <div class="userDatos">
+    <div class="titulo">
+      <h1>Hola {{ usuario.username }}, bienvenido a tu perfil</h1>
+    </div>
+    <ul class="perfilUl">
+      <li>Nombre: {{ usuario.name }}</li>
+      <li>Email: {{ usuario.email }}</li>
+      <li>Role: {{ usuario.role }}</li>
+      <li>Película pedida: {{ usuario.peliculaPedida }}</li>
+      <li>Fecha de pedido: {{ usuario.fecha_pedido }}</li>
+      <li>Fecha de entrega: {{ usuario.fecha_entrega }}</li>
+      <li>Alquiler película: {{ usuario.alquiler_peli }}</li>
+    </ul>
+    <input type="submit" name="btnLogout" class="btnLogout" value="Logout" />
+  </div>
+</div>

@@ -1,16 +1,29 @@
-<div class="movies">
-  <div class="movie" *ngFor="let pelicula of peliculas">
-    <img
-      class="image"
-      src="https://image.tmdb.org/t/p/w200/{{ pelicula.poster_path }}"
-      alt="poster"
+<div class="container">
+  <form>
+    <input
+      class="searchInput"
+      type="text"
+      name="filterAll"
+      placeholder="Search..."
+      [(ngModel)]="filterAll"
     />
-    <div class="description">
-      <h2 class="title">{{ pelicula.title }}</h2>
-      <p class="parrafo">
-        {{ pelicula.overview }}
-      </p>
-      <a class="infoBtn" routerLink="/movie/{{ pelicula._id }}">Read more...</a>
+  </form>
+  <div class="movies">
+    <div class="movie" *ngFor="let pelicula of peliculas | filter: filterAll">
+      <img
+        class="image"
+        src="https://image.tmdb.org/t/p/w200/{{ pelicula.poster_path }}"
+        alt="poster"
+      />
+      <div class="description">
+        <h2 class="title">{{ pelicula.title }}</h2>
+        <p class="parrafo">
+          {{ pelicula.overview }}
+        </p>
+        <a class="infoBtn" routerLink="/movie/{{ pelicula._id }}"
+          >Read more...</a
+        >
+      </div>
     </div>
   </div>
 </div>
