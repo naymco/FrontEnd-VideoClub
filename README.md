@@ -1,27 +1,48 @@
 # FrontendAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
+Proyecto creado en Angular 8, consumiendo una API en Nodejs, express y mongodb como base de datos, que se encuentra también en este repositorio con este link https://github.com/naymco/Backend-videoClub
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### GESTIÓN DE USUARIOS
 
-## Code scaffolding
+* Validación por Token :white_check_mark:
+* Endpoint de Login :white_check_mark:
+* Endpoint de Registro :white_check_mark:
+* Endpoint de Perfil (Datos de Usuario) :white_check_mark:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Hice alguno de los extras:
 
-## Build
+**Sistema de Roles**
+* Administrador :white_check_mark:
+* Usuario :white_check_mark:
+* Invitado (Usuario Sin Registrar) :white_check_mark:
+* ¿Has olvidado la contraseña? :x:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+Sistema de roles, usuario, Administrador. No tuve tiempo de crear el recordatorio de contraseña, pero posiblemente lo mejore.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### GESTIÓN DE PELÍCULAS
 
-## Running end-to-end tests
+* Endpoint de Movie (All) :white_check_mark:
+* Filtrar por Id   :white_check_mark:
+* Filtrar por Género. :white_check_mark:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+*Extras:*
 
-## Further help
+* Endpoint de Movie :white_check_mark:
+* Filtrar por Estrenos :x:
+* Filtrar por Título. :white_check_mark:
+* Filtrar por Actores. :x:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### GESTIÓN DE PEDIDOS
+
+* Endpoint de Pedidos (Por Usuario) :white_check_mark:
+* Una Película por Usuario.  :white_check_mark:
+* Recoge Fecha de Alquiler  :white_check_mark:
+* Recoge Fecha de Entrega  :white_check_mark:
+
+*Extras de esta sección no creado.*
+
+### GESTIÓN DE DATOS
+
+* Creado con base de datos MongDB :white_check_mark:
